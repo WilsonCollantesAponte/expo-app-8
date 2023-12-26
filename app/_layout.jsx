@@ -17,10 +17,16 @@
 
 import { Slot } from "expo-router";
 import { View } from "react-native-web";
+import { Link } from "expo-router";
 
 export default function HomeLayout() {
   return (
     <View>
+      <View>
+        <Link href="/">Main</Link>
+        <Link href="/home">Home</Link>
+        <Link href="/other">Othert</Link>
+      </View>
       <Slot />;
     </View>
   );
